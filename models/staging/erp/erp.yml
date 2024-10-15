@@ -1,0 +1,134 @@
+version: 2
+
+sources:
+  - name: erp_adventure
+    description: Sistema ERP principal de operação da empresa
+    database: FEA24_9
+    schema: RAW_ADVENTURE_WORKS
+    tables:
+      - name : ADDRESS 
+        description: insiraDescricaoAqui
+      #- name : ADDRESSTYPE 
+      #  description: insiraDescricaoAqui
+      #- name : BILLOFMATERIALS 
+      #  description: insiraDescricaoAqui
+      #- name : BUSINESSENTITY 
+      #  description: insiraDescricaoAqui
+      #- name : BUSINESSENTITYADDRESS 
+      #  description: insiraDescricaoAqui
+      #- name : BUSINESSENTITYCONTACT 
+      #  description: insiraDescricaoAqui
+      #- name : CONTACTTYPE 
+      #  description: insiraDescricaoAqui
+      - name : COUNTRYREGION 
+        description: insiraDescricaoAqui
+      #- name : COUNTRYREGIONCURRENCY 
+      #  description: insiraDescricaoAqui
+      - name : CREDITCARD 
+        description: insiraDescricaoAqui
+      #- name : CULTURE 
+      #  description: insiraDescricaoAqui
+      #- name : CURRENCY 
+      #  description: insiraDescricaoAqui
+      - name : CURRENCYRATE 
+        description: insiraDescricaoAqui
+      - name : CUSTOMER 
+        description: insiraDescricaoAqui
+      #- name : DEPARTMENT 
+      #  description: insiraDescricaoAqui
+      #- name : EMAILADDRESS 
+      #  description: insiraDescricaoAqui
+      #- name : EMPLOYEE 
+      #  description: insiraDescricaoAqui
+      #- name : EMPLOYEEDEPARTMENTHISTORY 
+      #  description: insiraDescricaoAqui
+      #- name : EMPLOYEEPAYHISTORY 
+      #  description: insiraDescricaoAqui
+      #- name : ILLUSTRATION 
+      #  description: insiraDescricaoAqui
+      #- name : JOBCANDIDATE 
+      #  description: insiraDescricaoAqui
+      #- name : LOCATION 
+      #  description: insiraDescricaoAqui
+      - name : PERSON 
+        description: insiraDescricaoAqui
+      - name : PERSONCREDITCARD 
+        description: insiraDescricaoAqui
+      #- name : PERSONPHONE 
+      #  description: insiraDescricaoAqui
+      #- name : PHONENUMBERTYPE 
+      #  description: insiraDescricaoAqui
+      - name : PRODUCT 
+        description: insiraDescricaoAqui
+      - name : PRODUCTCATEGORY 
+        description: insiraDescricaoAqui
+      #- name : PRODUCTCOSTHISTORY 
+      #  description: insiraDescricaoAqui
+      #- name : PRODUCTDESCRIPTION 
+      #  description: insiraDescricaoAqui
+      #- name : PRODUCTDOCUMENT 
+      #  description: insiraDescricaoAqui
+      #- name : PRODUCTINVENTORY 
+      #  description: insiraDescricaoAqui
+      #- name : PRODUCTLISTPRICEHISTORY 
+      #  description: insiraDescricaoAqui
+      #- name : PRODUCTMODEL 
+      #  description: insiraDescricaoAqui
+      #- name : PRODUCTMODELILLUSTRATION 
+      #  description: insiraDescricaoAqui
+      #- name : PRODUCTMODELPRODUCTDESCRIPTIONCULTURE 
+      #  description: insiraDescricaoAqui
+      #- name : PRODUCTPRODUCTPHOTO 
+      #  description: insiraDescricaoAqui
+      - name : PRODUCTSUBCATEGORY 
+        description: insiraDescricaoAqui
+      - name : PRODUCTVENDOR 
+        description: insiraDescricaoAqui
+      #- name : VENDOR 
+      #  description: insiraDescricaoAqui  
+      - name : PURCHASEORDERDETAIL 
+        description: insiraDescricaoAqui
+      - name : PURCHASEORDERHEADER 
+        description: insiraDescricaoAqui
+      - name : SALESORDERDETAIL 
+        description: insiraDescricaoAqui
+      - name : SALESORDERHEADER 
+        description: insiraDescricaoAqui
+      - name : SALESORDERHEADERSALESREASON 
+        description: insiraDescricaoAqui
+      - name : SALESPERSON 
+        description: insiraDescricaoAqui
+      - name : SALESPERSONQUOTAHISTORY 
+        description: insiraDescricaoAqui
+      - name : SALESREASON 
+        description: insiraDescricaoAqui
+      - name : SALESTAXRATE 
+        description: insiraDescricaoAqui
+      - name : SALESTERRITORYHISTORY 
+        description: insiraDescricaoAqui
+      - name : SCRAPREASON 
+        description: insiraDescricaoAqui
+      #- name : SHIFT 
+      #  description: insiraDescricaoAqui
+      - name : SHIPMETHOD 
+        description: insiraDescricaoAqui
+      #- name : SHOPPINGCARTITEM 
+      #  description: insiraDescricaoAqui
+      #- name : SPECIALOFFER 
+      #  description: insiraDescricaoAqui
+      #- name : SPECIALOFFERPRODUCT 
+      #  description: insiraDescricaoAqui
+      - name : STATEPROVINCE 
+        description: insiraDescricaoAqui
+      #- name : STORE 
+      #  description: insiraDescricaoAqui
+      #- name : TRANSACTIONHISTORY 
+      #  description: insiraDescricaoAqui
+      #- name : TRANSACTIONHISTORYARCHIVE 
+      #  description: insiraDescricaoAqui
+      #- name : UNITMEASURE 
+      #  description: insiraDescricaoAqui
+      #- name : WORKORDER 
+      #  description: insiraDescricaoAqui
+      #- name : WORKORDERROUTING 
+      #  description: insiraDescricaoAqui
