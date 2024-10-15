@@ -5,8 +5,8 @@ with
     )
     ,rename as (
         select
-             cast(CUSTOMERID as varchar) as pk_id_customer
-            ,cast(PERSONID as varchar) as fk_id_person
+             cast(CUSTOMERID as int) as pk_id_customer
+            ,cast(PERSONID as int) as fk_id_person
             ,cast(STOREID as int) as fk_id_store
             ,cast(TERRITORYID as int) as fk_id_territory
             --,cast(ROWGUID as varchar) as ROWGUID

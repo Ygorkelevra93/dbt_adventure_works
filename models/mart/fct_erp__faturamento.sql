@@ -28,10 +28,11 @@ with
             ,FCT_VENDAS_PRECO_UNITARIO_CUSTO as "Valor Custo Produto Unitário"
             ,FCT_VENDAS_MARGEM_LIQUIDA as "Margem Líquida"
             ,FCT_VENDAS_MARGEM_BRUTA as "Margem Bruta"
-            ,FCT_VENDAS_STATUS_VENDA as "Status Venda"
+            ,fct_vendas_status_venda_nome as "Status Venda"
             ,FCT_VENDAS_TIPO_VENDA as "Tipo Venda"
             ,FCT_VENDAS_ORDEM_COMPRA as "Ordem de Compra"
             ,FCT_VENDAS_NUMERO_CONTA as "Número Conta"
+            
         from {{ref("int_erp__fct_vendas")}}
 )
 

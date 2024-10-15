@@ -14,6 +14,11 @@ with
         from {{ref("int_erp__produtos")}}
     )
 
+    ,status as (
+        select *
+        from {{ref("seedssale_order_status_description")}}
+    )
+
     ,regra_negocio as (
         select 
             -- chave primaria
@@ -55,14 +60,17 @@ with
             -- informacao
             ,vendacabecalho.ORDEM_DE_VENDA_NUMERO_REVISAO as fct_vendas_numero_revisao
             ,vendacabecalho.ORDEM_DE_VENDA_STATUS as fct_vendas_status_venda
+            ,status.status_description as fct_vendas_status_venda_nome
             ,vendacabecalho.ORDEM_DE_VENDA_TIPO_VENDA as fct_vendas_tipo_venda
             ,vendacabecalho.ORDEM_DE_VENDA_REF_ORDEM_COMPRA as fct_vendas_ordem_compra
             ,vendacabecalho.ORDEM_DE_VENDA_NUMERO_CONTA as fct_vendas_numero_conta
             ,vendacabecalho.ORDEM_DE_VENDA_COD_APROV_CARTAO as fct_vendas_cod_aprov_cartao
             ,vendacabecalho.ORDEM_DE_VENDA_OBSERVACOES as fct_vendas_observacoes
+            
         from vendadetalhe
         left join vendacabecalho on vendacabecalho.pk_ordem_de_venda_ID = vendadetalhe.fk_id_vendascabecalho
         left join custoproduto on custoproduto.pk_id_produto = vendadetalhe.fk_id_produto
+        left join status on status.status = vendacabecalho.ORDEM_DE_VENDA_STATUS
         order by vendacabecalho.ORDEM_DE_VENDA_DATA_VENDA, vendacabecalho.PK_ORDEM_DE_VENDA_ID
     )
 
