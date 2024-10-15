@@ -1,6 +1,7 @@
 
 
-{{ config(severity = 'warn') }}
+/* {{ config(severity = 'warn') }} */ 
+/* Criado uma configuração de aviso para ser usada sem travar o pipeline*/
 
 WITH vendas_2011 AS (
     SELECT 
@@ -11,4 +12,4 @@ WITH vendas_2011 AS (
 
 SELECT *
 FROM vendas_2011
-WHERE total = '12646112.16'
+WHERE total != '12646112.16'
