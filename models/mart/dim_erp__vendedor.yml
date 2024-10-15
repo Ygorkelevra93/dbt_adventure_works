@@ -1,0 +1,36 @@
+version: 2
+
+models:
+  - name: dim_erp__vendedor
+    description: >
+      Tabela dimensional que armazena informações sobre os vendedores, incluindo território, metas, bônus e vendas acumuladas.
+    columns:
+      - name: ID Vendedor
+        description: 'Identificador único do vendedor.'
+
+      - name: ID Território Vendedor
+        description: 'Identificador do território ao qual o vendedor está associado.'
+
+      - name: Vendedor
+        description: 'Nome do vendedor.'
+
+      - name: Tipo Pessoa Cód
+        description: 'Código que identifica o tipo de pessoa (física ou jurídica) associada ao vendedor.'
+
+      - name: Tipo Pessoa
+        description: 'Tipo de pessoa associado ao vendedor, podendo ser física ou jurídica.'
+
+      - name: Meta Vendedor
+        description: 'Meta de vendas estabelecida para o vendedor no período.'
+
+      - name: Bônus Vendedor
+        description: 'Bônus que o vendedor pode receber, dependendo de seu desempenho.'
+
+      - name: Percentual Comissão
+        description: 'Percentual de comissão recebido pelo vendedor nas vendas realizadas.'
+
+      - name: Vendas Acumuladas no Ano / Vendedor
+        description: 'Valor das vendas acumuladas pelo vendedor durante o ano corrente.'
+
+      - name: Vendas Período Anterior / Vendedor
+        description: 'Valor das vendas acumuladas pelo vendedor no período anterior.'

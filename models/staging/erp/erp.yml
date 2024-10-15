@@ -6,117 +6,123 @@ sources:
     database: FEA24_9
     schema: RAW_ADVENTURE_WORKS
     tables:
-      - name : ADDRESS 
-        description: insiraDescricaoAqui
+      - name: ADDRESS
+        description: "Tabela que contém os endereços dos clientes e fornecedores."
         columns:
           - name: ADDRESSID
             tests:
-            - not_null
-            - unique                
-                
-      - name : COUNTRYREGION 
-        description: insiraDescricaoAqui
+              - not_null
+              - unique                
+
+      - name: COUNTRYREGION
+        description: "Tabela que armazena informações sobre regiões e países."
         columns:
           - name: COUNTRYREGIONCODE
             tests:
-            - not_null
-            - unique          
-      - name : CREDITCARD 
-        description: insiraDescricaoAqui
+              - not_null
+              - unique          
+
+      - name: CREDITCARD
+        description: "Tabela que contém os detalhes dos cartões de crédito dos clientes."
         columns:
           - name: CREDITCARDID
             tests:
-            - not_null
-            - unique  
-      - name : CUSTOMER 
-        description: insiraDescricaoAqui
+              - not_null
+              - unique  
+
+      - name: CUSTOMER
+        description: "Tabela que armazena informações sobre os clientes da empresa."
         columns: 
           - name: CUSTOMERID
             tests:
-            - not_null
-            - unique  
-      - name : PERSON 
-        description: insiraDescricaoAqui
+              - not_null
+              - unique  
+
+      - name: PERSON
+        description: "Tabela que contém informações sobre as pessoas físicas registradas."
         columns:
           - name: BUSINESSENTITYID
             tests:
-            - not_null
-            - unique  
-      - name : PRODUCT 
-        description: insiraDescricaoAqui
+              - not_null
+              - unique  
+
+      - name: PRODUCT
+        description: "Tabela que contém informações sobre os produtos disponíveis para venda."
         columns:
           - name: PRODUCTID
             tests:
-            - not_null
-            - unique  
-      - name : PRODUCTCATEGORY 
-        description: insiraDescricaoAqui
+              - not_null
+              - unique  
+
+      - name: PRODUCTCATEGORY
+        description: "Tabela que classifica os produtos em categorias."
         columns:
           - name: PRODUCTCATEGORYID
             tests:
-            - not_null
-            - unique  
-      - name : PRODUCTSUBCATEGORY 
-        description: insiraDescricaoAqui
+              - not_null
+              - unique  
+
+      - name: PRODUCTSUBCATEGORY
+        description: "Tabela que classifica os produtos em subcategorias dentro das categorias."
         columns:
           - name: PRODUCTSUBCATEGORYID
             tests:
-            - not_null
-            - unique  
-      - name : SALESORDERDETAIL 
-        description: insiraDescricaoAqui
+              - not_null
+              - unique  
+
+      - name: SALESORDERDETAIL
+        description: "Tabela que contém detalhes dos pedidos de venda, incluindo produtos e quantidades."
         columns:
           - name: SALESORDERDETAILID
             tests:
-            - not_null
-            - unique  
+              - not_null
+              - unique  
           - name: SALESORDERID
             tests:
-            - not_null
+              - not_null
            
-      - name : SALESORDERHEADER 
-        description: insiraDescricaoAqui
+      - name: SALESORDERHEADER
+        description: "Tabela que armazena as informações principais dos pedidos de venda."
         columns:
           - name: SALESORDERID
             tests:
-            - not_null
-            - unique  
+              - not_null
+              - unique  
           - name: CUSTOMERID
             tests:
-            - not_null
+              - not_null
             
-          
-      - name : SALESPERSON 
-        description: insiraDescricaoAqui
+      - name: SALESPERSON
+        description: "Tabela que contém informações sobre os vendedores da empresa."
         columns:
           - name: BUSINESSENTITYID
             tests:
-            - not_null
-            - unique  
-      - name : SALESREASON 
-        description: insiraDescricaoAqui
+              - not_null
+              - unique  
+
+      - name: SALESREASON
+        description: "Tabela que armazena os motivos de venda."
         columns:
           - name: SALESREASONID
             tests:
-            - not_null
-            - unique  
+              - not_null
+              - unique  
 
-      - name : SHIPMETHOD 
-        description: insiraDescricaoAqui
+      - name: SHIPMETHOD
+        description: "Tabela que contém informações sobre os métodos de envio disponíveis."
         columns:
           - name: SHIPMETHODID
             tests:
-            - not_null
-            - unique  
+              - not_null
+              - unique  
 
-      - name : STATEPROVINCE 
-        description: insiraDescricaoAqui
+      - name: STATEPROVINCE
+        description: "Tabela que armazena informações sobre estados e províncias."
         columns:
           - name: STATEPROVINCEID
             tests:
-            - not_null
-            - unique  
+              - not_null
+              - unique  
           - name: STATEPROVINCECODE
             tests:
-            - not_null
-              
+              - not_null

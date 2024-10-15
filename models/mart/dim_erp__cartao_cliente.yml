@@ -1,0 +1,16 @@
+version: 2
+
+models:
+  - name: dim_erp__cartao_cliente
+    description: "Tabela que contém informações detalhadas sobre os cartões de clientes, incluindo tipo e datas de expiração."
+    columns:
+      - name: ID Cartão Cliente
+        description: "Identificador único do cartão do cliente."
+      - name: Tipo Cartão Cliente
+        description: "Tipo do cartão do cliente."
+      - name: Mês Expiração
+        description: "Mês em que o cartão expira."
+      - name: Ano Expiração
+        description: "Ano em que o cartão expira."
+      - name: Data Expiração
+        description: "Data exata de expiração do cartão."

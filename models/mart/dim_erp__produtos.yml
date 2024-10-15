@@ -1,0 +1,24 @@
+version: 2
+
+models:
+  - name: dim_erp__produtos
+    description: >
+      Tabela dimensional que armazena informações sobre os produtos, incluindo categoria, subcategoria e datas de entrada e saída.
+    columns:
+      - name: ID Produto
+        description: 'Identificador único do produto.'
+
+      - name: Nome Produto
+        description: 'Nome do produto.'
+
+      - name: Subcategoria
+        description: 'Subcategoria à qual o produto pertence.'
+
+      - name: Categoria
+        description: 'Categoria principal à qual o produto pertence.'
+
+      - name: Data Phase In
+        description: 'Data em que o produto entrou na fase de comercialização.'
+
+      - name: Data Phase Out
+        description: 'Data em que o produto saiu da fase de comercialização.'

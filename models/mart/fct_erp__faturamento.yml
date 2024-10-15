@@ -1,0 +1,101 @@
+version: 2
+
+models:
+  - name: fct_erp__faturamento
+    description: >
+      Tabela de fato que consolida as informações de faturamento. 
+      Contém detalhes sobre vendas, clientes, vendedores, território, 
+      produtos e condições de venda, entre outros.
+    columns:
+      - name: Nota Fiscal
+        description: 'Chave primária da ordem de venda, que representa a nota fiscal.'
+
+      - name: ID Cliente
+        description: 'Identificador único do cliente relacionado à venda.'
+
+      - name: ID Vendedor
+        description: 'Identificador único do vendedor responsável pela venda.'
+
+      - name: ID Território Venda
+        description: 'Identificador do território de vendas ao qual a venda está associada.'
+
+      - name: ID Requisição de Material
+        description: 'Identificador único da requisição de material.'
+
+      - name: ID Endereço Entrega
+        description: 'Identificador do endereço de entrega para a venda.'
+
+      - name: ID Tipo Entrega
+        description: 'Identificador do tipo de entrega usada na transação.'
+
+      - name: ID Cartão Cliente
+        description: 'Identificador único do cartão cliente utilizado na venda.'
+
+      - name: ID Cotação dia
+        description: 'Identificador da cotação de moeda usada no dia da venda.'
+
+      - name: ID Produto
+        description: 'Identificador do produto vendido.'
+
+      - name: ID Condição Especial oferta
+        description: 'Identificador de condições especiais aplicadas à venda, como ofertas.'
+
+      - name: Data Venda
+        description: 'Data em que a venda foi realizada.'
+
+      - name: Data Prazo de Entrega
+        description: 'Data limite para a entrega do produto ao cliente.'
+
+      - name: Data de Embarque
+        description: 'Data em que o produto foi embarcado para o cliente.'
+
+      - name: Valor Subtotal Nota
+        description: 'Valor bruto da nota fiscal, antes de impostos e descontos.'
+
+      - name: Valor Impostos Nota
+        description: 'Valor dos impostos aplicados na nota fiscal.'
+
+      - name: Valor Frete Nota
+        description: 'Valor do frete aplicado na nota fiscal.'
+
+      - name: Valor Total Impresso Nota
+        description: 'Valor total impresso na nota fiscal.'
+
+      - name: Quantidade Comprada
+        description: 'Quantidade de produtos comprados na venda.'
+
+      - name: Preço Venda Unitário
+        description: 'Preço unitário de venda do produto.'
+
+      - name: Percentual Desconto Aplicado
+        description: 'Percentual de desconto aplicado ao preço de venda.'
+
+      - name: Valor Total Negociado
+        description: 'Valor total negociado, incluindo descontos e outros ajustes.'
+
+      - name: Valor Total Negociado Líquido
+        description: 'Valor total negociado, líquido após descontos e ajustes.'
+
+      - name: Valor Custo Produtos
+        description: 'Custo total dos produtos vendidos.'
+
+      - name: Valor Custo Produto Unitário
+        description: 'Custo unitário do produto vendido.'
+
+      - name: Margem Líquida
+        description: 'Margem líquida obtida na venda, após todos os custos.'
+
+      - name: Margem Bruta
+        description: 'Margem bruta obtida na venda, antes de considerar os custos.'
+
+      - name: Status Venda
+        description: 'Status da venda, indicando se foi concluída, cancelada, etc.'
+
+      - name: Tipo Venda
+        description: 'Tipo da venda, podendo ser à vista, parcelada, etc.'
+
+      - name: Ordem de Compra
+        description: 'Número da ordem de compra associada à venda.'
+
+      - name: Número Conta
+        description: 'Número da conta envolvida na transação da venda.'
