@@ -1,8 +1,9 @@
 -- 1. Gerando as datas entre 31/05/2011 e 31/12/2014
-WITH DateRange AS (
-    SELECT TO_DATE('2011-05-31') AS DateKey
-    UNION ALL
-    SELECT DATEADD(DAY, 1, DateKey)
+WITH 
+    DateRange AS (
+        SELECT TO_DATE('2011-05-31') AS DateKey
+        UNION ALL
+        SELECT DATEADD(DAY, 1, DateKey)
     FROM DateRange
     WHERE DateKey < '2014-12-31'
 )
