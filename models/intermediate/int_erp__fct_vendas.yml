@@ -1,0 +1,8 @@
+version: 2
+
+models:
+  - name: int_erp__fct_vendas
+    description: Tabela de regras de negócio, da junção das tabelas de vendas detalhe, vendas cabeçalho e produtos para chegar na métrica que corresponde ao faturamento da empresa.
+  
+
+

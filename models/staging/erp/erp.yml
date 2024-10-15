@@ -8,127 +8,115 @@ sources:
     tables:
       - name : ADDRESS 
         description: insiraDescricaoAqui
-      #- name : ADDRESSTYPE 
-      #  description: insiraDescricaoAqui
-      #- name : BILLOFMATERIALS 
-      #  description: insiraDescricaoAqui
-      #- name : BUSINESSENTITY 
-      #  description: insiraDescricaoAqui
-      #- name : BUSINESSENTITYADDRESS 
-      #  description: insiraDescricaoAqui
-      #- name : BUSINESSENTITYCONTACT 
-      #  description: insiraDescricaoAqui
-      #- name : CONTACTTYPE 
-      #  description: insiraDescricaoAqui
+        columns:
+          - name: ADDRESSID
+            tests:
+            - not_null
+            - unique                
+                
       - name : COUNTRYREGION 
         description: insiraDescricaoAqui
-      #- name : COUNTRYREGIONCURRENCY 
-      #  description: insiraDescricaoAqui
+        columns:
+          - name: COUNTRYREGIONCODE
+            tests:
+            - not_null
+            - unique          
       - name : CREDITCARD 
         description: insiraDescricaoAqui
-      #- name : CULTURE 
-      #  description: insiraDescricaoAqui
-      #- name : CURRENCY 
-      #  description: insiraDescricaoAqui
-      - name : CURRENCYRATE 
-        description: insiraDescricaoAqui
+        columns:
+          - name: CREDITCARDID
+            tests:
+            - not_null
+            - unique  
       - name : CUSTOMER 
         description: insiraDescricaoAqui
-      #- name : DEPARTMENT 
-      #  description: insiraDescricaoAqui
-      #- name : EMAILADDRESS 
-      #  description: insiraDescricaoAqui
-      #- name : EMPLOYEE 
-      #  description: insiraDescricaoAqui
-      #- name : EMPLOYEEDEPARTMENTHISTORY 
-      #  description: insiraDescricaoAqui
-      #- name : EMPLOYEEPAYHISTORY 
-      #  description: insiraDescricaoAqui
-      #- name : ILLUSTRATION 
-      #  description: insiraDescricaoAqui
-      #- name : JOBCANDIDATE 
-      #  description: insiraDescricaoAqui
-      #- name : LOCATION 
-      #  description: insiraDescricaoAqui
+        columns: 
+          - name: CUSTOMERID
+            tests:
+            - not_null
+            - unique  
       - name : PERSON 
         description: insiraDescricaoAqui
-      - name : PERSONCREDITCARD 
-        description: insiraDescricaoAqui
-      #- name : PERSONPHONE 
-      #  description: insiraDescricaoAqui
-      #- name : PHONENUMBERTYPE 
-      #  description: insiraDescricaoAqui
+        columns:
+          - name: BUSINESSENTITYID
+            tests:
+            - not_null
+            - unique  
       - name : PRODUCT 
         description: insiraDescricaoAqui
+        columns:
+          - name: PRODUCTID
+            tests:
+            - not_null
+            - unique  
       - name : PRODUCTCATEGORY 
         description: insiraDescricaoAqui
-      #- name : PRODUCTCOSTHISTORY 
-      #  description: insiraDescricaoAqui
-      #- name : PRODUCTDESCRIPTION 
-      #  description: insiraDescricaoAqui
-      #- name : PRODUCTDOCUMENT 
-      #  description: insiraDescricaoAqui
-      #- name : PRODUCTINVENTORY 
-      #  description: insiraDescricaoAqui
-      #- name : PRODUCTLISTPRICEHISTORY 
-      #  description: insiraDescricaoAqui
-      #- name : PRODUCTMODEL 
-      #  description: insiraDescricaoAqui
-      #- name : PRODUCTMODELILLUSTRATION 
-      #  description: insiraDescricaoAqui
-      #- name : PRODUCTMODELPRODUCTDESCRIPTIONCULTURE 
-      #  description: insiraDescricaoAqui
-      #- name : PRODUCTPRODUCTPHOTO 
-      #  description: insiraDescricaoAqui
+        columns:
+          - name: PRODUCTCATEGORYID
+            tests:
+            - not_null
+            - unique  
       - name : PRODUCTSUBCATEGORY 
         description: insiraDescricaoAqui
-      - name : PRODUCTVENDOR 
-        description: insiraDescricaoAqui
-      #- name : VENDOR 
-      #  description: insiraDescricaoAqui  
-      - name : PURCHASEORDERDETAIL 
-        description: insiraDescricaoAqui
-      - name : PURCHASEORDERHEADER 
-        description: insiraDescricaoAqui
+        columns:
+          - name: PRODUCTSUBCATEGORYID
+            tests:
+            - not_null
+            - unique  
       - name : SALESORDERDETAIL 
         description: insiraDescricaoAqui
+        columns:
+          - name: SALESORDERDETAILID
+            tests:
+            - not_null
+            - unique  
+          - name: SALESORDERID
+            tests:
+            - not_null
+           
       - name : SALESORDERHEADER 
         description: insiraDescricaoAqui
-      - name : SALESORDERHEADERSALESREASON 
-        description: insiraDescricaoAqui
+        columns:
+          - name: SALESORDERID
+            tests:
+            - not_null
+            - unique  
+          - name: CUSTOMERID
+            tests:
+            - not_null
+            
+          
       - name : SALESPERSON 
         description: insiraDescricaoAqui
-      - name : SALESPERSONQUOTAHISTORY 
-        description: insiraDescricaoAqui
+        columns:
+          - name: BUSINESSENTITYID
+            tests:
+            - not_null
+            - unique  
       - name : SALESREASON 
         description: insiraDescricaoAqui
-      - name : SALESTAXRATE 
-        description: insiraDescricaoAqui
-      - name : SALESTERRITORYHISTORY 
-        description: insiraDescricaoAqui
-      - name : SCRAPREASON 
-        description: insiraDescricaoAqui
-      #- name : SHIFT 
-      #  description: insiraDescricaoAqui
+        columns:
+          - name: SALESREASONID
+            tests:
+            - not_null
+            - unique  
+
       - name : SHIPMETHOD 
         description: insiraDescricaoAqui
-      #- name : SHOPPINGCARTITEM 
-      #  description: insiraDescricaoAqui
-      #- name : SPECIALOFFER 
-      #  description: insiraDescricaoAqui
-      #- name : SPECIALOFFERPRODUCT 
-      #  description: insiraDescricaoAqui
+        columns:
+          - name: SHIPMETHODID
+            tests:
+            - not_null
+            - unique  
+
       - name : STATEPROVINCE 
         description: insiraDescricaoAqui
-      #- name : STORE 
-      #  description: insiraDescricaoAqui
-      #- name : TRANSACTIONHISTORY 
-      #  description: insiraDescricaoAqui
-      #- name : TRANSACTIONHISTORYARCHIVE 
-      #  description: insiraDescricaoAqui
-      #- name : UNITMEASURE 
-      #  description: insiraDescricaoAqui
-      #- name : WORKORDER 
-      #  description: insiraDescricaoAqui
-      #- name : WORKORDERROUTING 
-      #  description: insiraDescricaoAqui
+        columns:
+          - name: STATEPROVINCEID
+            tests:
+            - not_null
+            - unique  
+          - name: STATEPROVINCECODE
+            tests:
+            - not_null
+              
