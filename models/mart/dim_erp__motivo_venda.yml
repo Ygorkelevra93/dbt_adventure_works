@@ -1,0 +1,15 @@
+version: 2
+
+models:
+  - name: dim_erp__motivo_venda
+    description: >
+      Tabela dimensional que armazena informações sobre os motivos e classificações dos tipos de venda.
+    columns:
+      - name: Id Tipo Venda
+        description: 'Identificador único do tipo de venda.'
+
+      - name: Tipo Venda
+        description: 'Nome do tipo de venda.'
+
+      - name: Classificação Tipo Venda
+        description: 'Classificação do tipo de venda.'

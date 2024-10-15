@@ -1,0 +1,21 @@
+version: 2
+
+models:
+  - name: dim_erp__regiao
+    description: >
+      Tabela dimensional que armazena informações sobre regiões, como endereços, cidades, estados e países.
+    columns:
+      - name: ID Endereço
+        description: 'Identificador único do endereço.'
+
+      - name: Cidade
+        description: 'Nome da cidade associada ao endereço.'
+
+      - name: Estado
+        description: 'Nome do estado associado ao endereço.'
+
+      - name: País
+        description: 'Nome do país associado ao endereço.'
+
+      - name: País Abrev.
+        description: 'Código abreviado do país.'

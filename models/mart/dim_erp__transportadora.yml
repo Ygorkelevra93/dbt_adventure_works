@@ -1,0 +1,12 @@
+version: 2
+
+models:
+  - name: dim_erp__transportadora
+    description: >
+      Tabela dimensional que armazena informações sobre as transportadoras, associadas ao tipo de entrega.
+    columns:
+      - name: ID Transportadora
+        description: 'Identificador único da transportadora.'
+
+      - name: Transportadora
+        description: 'Nome da transportadora associada ao tipo de entrega.'

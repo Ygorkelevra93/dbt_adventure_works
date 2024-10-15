@@ -1,0 +1,18 @@
+version: 2
+
+models:
+  - name: dim_erp__clientes
+    description: >
+      Tabela dimensional que armazena informações sobre os clientes, incluindo o tipo e nome do cliente.
+    columns:
+      - name: ID Cliente
+        description: 'Identificador único do cliente.'
+
+      - name: Tipo Cliente Abrev.
+        description: 'Código abreviado que indica o tipo de cliente.'
+
+      - name: Tipo Cliente
+        description: 'Nome que descreve o tipo de cliente.'
+
+      - name: Nome Cliente
+        description: 'Nome completo do cliente.'
