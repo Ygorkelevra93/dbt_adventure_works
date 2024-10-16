@@ -92,6 +92,16 @@ sources:
             tests:
               - not_null
             
+      - name: SalesOrderHeaderSalesReason
+        description: "Tabela que armazena a relação entre os pedidos de venda e motivos de venda."
+        columns:
+          - name: SalesReasonID
+            tests:
+              - not_null              
+          - name: SalesOrderID
+            tests:
+              - not_null
+                  
       - name: SALESPERSON
         description: "Tabela que contém informações sobre os vendedores da empresa."
         columns:
