@@ -1,10 +1,10 @@
 with 
     rename as (
         select 
-             PK_ID_MOTIVO_VENDA as "Id Tipo Venda"
-            ,MOTIVO_VENDA_NOME as "TIpo Venda"
+             PK_ID_ORDEM_DE_VENDA as "Id Ordem de Venda"
+            ,MOTIVO_VENDA_NOME as "Tipo Venda"
             ,MOTIVO_VENDA_TIPO as "Classificação Tipo Venda "
-        from {{ref("stg_erp__motivo_venda")}}
+        from {{ref("int_erp__motivo_venda")}}
 )
 
 select * from rename

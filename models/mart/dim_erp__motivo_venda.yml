@@ -5,8 +5,8 @@ models:
     description: >
       Tabela dimensional que armazena informações sobre os motivos e classificações dos tipos de venda.
     columns:
-      - name: Id Tipo Venda
-        description: 'Identificador único do tipo de venda.'
+      - name: Id Ordem de Venda
+        description: 'Identificador de qual nota fiscal se refere'
 
       - name: Tipo Venda
         description: 'Nome do tipo de venda.'
