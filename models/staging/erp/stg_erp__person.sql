@@ -1,13 +1,13 @@
 with 
     person as (
         select * 
-        from  {{source('erp_adventure','PERSON')}}
+        from  {{source('erp_adventure','PERSON')}} --where BUSINESSENTITYID = '1704' -- Feito teste para correção do erro de nomes vazio (era o nome do meio nulo na concatenação que eu havia feito)
 
     )
 
     ,rename as (
         select
-             cast(BUSINESSENTITYID as varchar) as pk_id_person_entidade_negocio
+             cast(BUSINESSENTITYID as int) as pk_id_person_entidade_negocio
             ,cast(PERSONTYPE as varchar) as person_tipo_cod
             ,case
                 when PERSONTYPE = 'SC' then 'Store Contact'
@@ -18,7 +18,7 @@ with
                 when PERSONTYPE = 'GC' then 'General contact'
                 else 'Verificar'
             end as person_tipo_nome        
-            ,cast(FIRSTNAME as varchar) || ' ' ||cast(MIDDLENAME as varchar)|| ' ' ||cast(LASTNAME as varchar) as person_name
+            ,cast(coalesce(FIRSTNAME,'')||' '||coalesce(MIDDLENAME,'')||' '||coalesce(LASTNAME,'') as varchar) as person_name
             ,cast(EMAILPROMOTION as int) as person_tipo_email_promocional
             ,cast(MODIFIEDDATE as date) as person_data_att
             --,cast(NAMESTYLE as varchar) as NAMESTYLE
@@ -31,3 +31,4 @@ with
     )
 
 select * from rename    
+--where pk_id_person_entidade_negocio =  '1704'

@@ -136,3 +136,11 @@ sources:
           - name: STATEPROVINCECODE
             tests:
               - not_null
+      - name: STORE
+        description: "Tabela que armazena informações sobre cadastros das lojas como clientes"
+        columns:
+          - name: BusinessEntityID
+            tests:
+              - not_null
+              - unique  
+          
