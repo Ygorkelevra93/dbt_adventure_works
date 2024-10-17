@@ -1,0 +1,14 @@
+version: 2
+
+models:
+  - name: stg_erp__motivo_venda
+    description: "Tabela de motivos de vendas extraída do sistema ERP AdventureWorks."
+    columns:
+      - name: pk_id_motivo_venda
+        description: "Chave primária do motivo de venda (SALESREASONID)."
+      - name: motivo_venda_nome
+        description: "Nome do motivo de venda (NAME)."
+      - name: motivo_venda_tipo
+        description: "Tipo do motivo de venda (REASONTYPE)."
+      - name: motivo_venda_data_att
+        description: "Data da última atualização do motivo de venda (MODIFIEDDATE)."

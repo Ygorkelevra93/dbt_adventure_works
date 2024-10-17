@@ -1,0 +1,24 @@
+version: 2
+
+models:
+  - name: stg_erp__vendedor
+    description: "Tabela de vendedores extraída do sistema ERP AdventureWorks, contendo informações sobre cada vendedor e seu desempenho."
+    columns:
+      - name: pk_id_salesperson_entidade_negocio
+        description: "Chave primária do vendedor (BUSINESSENTITYID)."
+      - name: fk_id_territorio
+        description: "Chave estrangeira referenciando o território do vendedor (TERRITORYID)."
+      - name: salesperson_meta
+        description: "Meta de vendas do vendedor (SALESQUOTA)."
+      - name: salesperson_bonus
+        description: "Bônus do vendedor (BONUS)."
+      - name: salesperson_comissao
+        description: "Percentual de comissão do vendedor (COMMISSIONPCT)."
+      - name: salesperson_vendas_acumuladas
+        description: "Vendas acumuladas do vendedor até o ano atual (SALESYTD)."
+      - name: salesperson_vendas_ano_anterior
+        description: "Vendas do vendedor no ano anterior (SALESLASTYEAR)."
+      - name: salesperson_row_GUID
+        description: "GUID da linha do vendedor (ROWGUID)."
+      - name: salesperson_data_att
+        description: "Data da última atualização das informações do vendedor (MODIFIEDDATE)."

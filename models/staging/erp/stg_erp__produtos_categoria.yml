@@ -1,0 +1,12 @@
+version: 2
+
+models:
+  - name: stg_erp__produtos_categoria
+    description: "Tabela de categorias de produtos extraídas do sistema ERP AdventureWorks, contendo detalhes sobre cada categoria."
+    columns:
+      - name: pk_id_categoria
+        description: "Chave primária da categoria de produto (PRODUCTCATEGORYID)."
+      - name: categoria_nome
+        description: "Nome da categoria de produto (NAME)."
+      - name: categoria_data_att
+        description: "Data da última atualização da categoria (MODIFIEDDATE)."

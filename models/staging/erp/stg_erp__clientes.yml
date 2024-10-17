@@ -1,0 +1,16 @@
+version: 2
+
+models:
+  - name: stg_erp__clientes
+    description: "Tabela de clientes extraída do sistema ERP AdventureWorks."
+    columns:
+      - name: pk_id_customer
+        description: "Chave primária do cliente (CUSTOMERID)."
+      - name: fk_id_person
+        description: "Chave estrangeira que referencia a pessoa associada ao cliente (PERSONID)."
+      - name: fk_id_store
+        description: "Chave estrangeira que referencia a loja associada ao cliente (STOREID)."
+      - name: fk_id_territory
+        description: "Chave estrangeira que referencia o território associado ao cliente (TERRITORYID)."
+      - name: customer_data_att
+        description: "Data da última atualização do cliente (MODIFIEDDATE)."

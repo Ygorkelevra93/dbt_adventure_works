@@ -1,0 +1,18 @@
+version: 2
+
+models:
+  - name: stg_erp__cartao_credito_cliente
+    description: "Tabela de cartões de crédito dos clientes extraída do sistema ERP AdventureWorks."
+    columns:
+      - name: pk_id_cartao_cliente
+        description: "Chave primária do cartão de crédito do cliente (CREDITCARDID)."
+      - name: cartao_cliente_tipo_cartao
+        description: "Tipo de cartão de crédito do cliente (CARDTYPE)."
+      - name: cartao_cliente_numero
+        description: "Número do cartão de crédito do cliente (CARDNUMBER)."
+      - name: cartao_cliente_mes_expira
+        description: "Mês de expiração do cartão de crédito (EXPMONTH)."
+      - name: cartao_cliente_ano_expira
+        description: "Ano de expiração do cartão de crédito (EXPYEAR)."
+      - name: cartao_cliente_data_att
+        description: "Data da última atualização do cartão de crédito (MODIFIEDDATE)."

@@ -1,0 +1,26 @@
+version: 2
+
+models:
+  - name: stg_erp__vendas_detalhe
+    description: "Tabela de detalhes de vendas extraídas do sistema ERP AdventureWorks, contendo informações sobre os itens de cada ordem de venda."
+    columns:
+      - name: pk_id_vendasdetalhe
+        description: "Chave primária dos detalhes da venda (SALESORDERDETAILID)."
+      - name: fk_id_vendascabecalho
+        description: "Chave estrangeira referenciando o cabeçalho da venda (SALESORDERID)."
+      - name: fk_id_produto
+        description: "Chave estrangeira referenciando o produto vendido (PRODUCTID)."
+      - name: fk_id_condicao_especial_venda
+        description: "Chave estrangeira referenciando condições especiais de venda (SPECIALOFFERID)."
+      - name: vendasdetalhe_quantidade
+        description: "Quantidade do produto na venda (ORDERQTY)."
+      - name: vendasdetalhe_preco_unitario_venda
+        description: "Preço unitário do produto na venda (UNITPRICE)."
+      - name: vendasdetalhe_perc_desconto_produto
+        description: "Percentual de desconto aplicado ao produto (UNITPRICEDISCOUNT)."
+      - name: vendasdetalhe_total_negociado
+        description: "Total negociado para a quantidade do produto (ORDERQTY * UNITPRICE)."
+      - name: vendasdetalhe_valor_liquido_negociado
+        description: "Valor líquido negociado após desconto (ORDERQTY * (UNITPRICE * (1 - UNITPRICEDISCOUNT)))."
+      - name: vendasdetalhe_track_number
+        description: "Número de rastreamento do transportador (CARRIERTRACKINGNUMBER)."

@@ -1,0 +1,35 @@
+version: 2
+
+models:
+  - name: stg_erp__calendar
+    description: "Tabela de calendário gerada para análise de datas do ERP, com dados de 31/05/2011 a 31/12/2014."
+    columns:
+      - name: pk_data
+        description: "Chave primária da data (DateKey)."
+        tests:
+          - unique
+          - not_null
+      - name: ano
+        description: "Ano correspondente à data."
+        tests:
+          - not_null
+      - name: mes
+        description: "Mês correspondente à data."
+        tests:
+          - not_null
+      - name: dia
+        description: "Dia correspondente à data."
+        tests:
+          - not_null
+      - name: dia_semana
+        description: "Dia da semana (0 = Domingo, 6 = Sábado)."
+      - name: semana_ano
+        description: "Número da semana no ano."
+      - name: trimestre_ano
+        description: "Trimestre do ano (1-4)."
+      - name: ano_mes
+        description: "Ano concatenado com o mês no formato 'YYYY_MM'."
+      - name: MonthName
+        description: "Nome completo do mês em formato textual."
+      - name: WeekdayName
+        description: "Nome completo do dia da semana em formato textual."

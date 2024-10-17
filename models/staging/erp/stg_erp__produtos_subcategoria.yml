@@ -1,0 +1,14 @@
+version: 2
+
+models:
+  - name: stg_erp__produtos_subcategoria
+    description: "Tabela de subcategorias de produtos extraídas do sistema ERP AdventureWorks, contendo detalhes sobre cada subcategoria."
+    columns:
+      - name: pk_id_subcategoria
+        description: "Chave primária da subcategoria de produto (PRODUCTSUBCATEGORYID)."
+      - name: fk_id_categoria
+        description: "Chave estrangeira que referencia a categoria de produto (PRODUCTCATEGORYID)."
+      - name: subcategoria_nome
+        description: "Nome da subcategoria de produto (NAME)."
+      - name: subcategoria_data_att
+        description: "Data da última atualização da subcategoria (MODIFIEDDATE)."

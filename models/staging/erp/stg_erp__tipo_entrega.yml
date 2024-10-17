@@ -1,0 +1,18 @@
+version: 2
+
+models:
+  - name: stg_erp__tipo_entrega
+    description: "Tabela de tipos de entrega extraídas do sistema ERP AdventureWorks, contendo informações sobre as transportadoras e suas tarifas."
+    columns:
+      - name: pk_id_tipo_entrega
+        description: "Chave primária do tipo de entrega (SHIPMETHODID)."
+      - name: tipo_entrega_transportadora
+        description: "Nome da transportadora ou método de entrega (NAME)."
+      - name: tipo_entrega_volume_minimo
+        description: "Volume mínimo para o método de entrega (SHIPBASE)."
+      - name: tipo_entrega_valor_cobrado
+        description: "Valor cobrado pelo método de entrega (SHIPRATE) por libra."
+      - name: tipo_entrega_GUID
+        description: "Identificador único (ROWGUID) do tipo de entrega."
+      - name: tipo_entrega_data_att
+        description: "Data da última atualização do tipo de entrega (MODIFIEDDATE)."

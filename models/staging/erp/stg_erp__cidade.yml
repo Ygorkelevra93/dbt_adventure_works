@@ -1,0 +1,16 @@
+version: 2
+
+models:
+  - name: stg_erp__cidade
+    description: "Tabela de endereços com detalhes sobre cidades, extraída do sistema ERP AdventureWorks."
+    columns:
+      - name: pk_id_endereco
+        description: "Chave primária do endereço (ADDRESSID)."
+      - name: fk_endereco_id_estado
+        description: "Chave estrangeira que referencia o estado do endereço (STATEPROVINCEID)."
+      - name: endereco_descricao
+        description: "Descrição completa do endereço, unindo as colunas ADDRESSLINE1 e ADDRESSLINE2."
+      - name: endereco_data_att
+        description: "Data da última atualização do endereço (MODIFIEDDATE)."
+      - name: endereco_cidade
+        description: "Nome da cidade do endereço (CITY)."

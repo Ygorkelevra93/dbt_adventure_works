@@ -1,0 +1,22 @@
+version: 2
+
+models:
+  - name: stg_erp__dates
+    description: "Dimensão de datas gerada com base nas funções de data do dbt para o período de 31/05/2011 a 30/06/2014."
+    columns:
+      - name: date_day
+        description: "O dia da data."
+      - name: date_week
+        description: "A semana do ano correspondente à data."
+      - name: date_month
+        description: "O mês correspondente à data."
+      - name: date_quarter
+        description: "O trimestre correspondente à data."
+      - name: date_year
+        description: "O ano correspondente à data."
+      - name: date_fiscal_month
+        description: "O mês fiscal correspondente à data."
+      - name: date_fiscal_quarter
+        description: "O trimestre fiscal correspondente à data."
+      - name: date_fiscal_year
+        description: "O ano fiscal correspondente à data."

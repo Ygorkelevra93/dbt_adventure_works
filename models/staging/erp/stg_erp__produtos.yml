@@ -1,0 +1,52 @@
+version: 2
+
+models:
+  - name: stg_erp__produtos
+    description: "Tabela de produtos extraída do sistema ERP AdventureWorks, contendo detalhes sobre cada produto."
+    columns:
+      - name: pk_id_produto
+        description: "Chave primária do produto (PRODUCTID)."
+      - name: fk_id_subcategoria
+        description: "Chave estrangeira que referencia a subcategoria do produto (PRODUCTSUBCATEGORYID)."
+      - name: fk_id_modelo_produto
+        description: "Chave estrangeira que referencia o modelo do produto (PRODUCTMODELID)."
+      - name: produto_data_phase_in
+        description: "Data de início da venda do produto (SELLSTARTDATE)."
+      - name: produto_data_phase_out
+        description: "Data de término da venda do produto (SELLENDDATE)."
+      - name: produto_preco_unitario_custo
+        description: "Preço unitário de custo do produto (STANDARDCOST)."
+      - name: produto_preco_lista
+        description: "Preço de lista do produto (LISTPRICE)."
+      - name: produto_peso
+        description: "Peso do produto (WEIGHT)."
+      - name: produto_nome
+        description: "Nome do produto (NAME)."
+      - name: produto_numero_de_serie
+        description: "Número de série do produto (PRODUCTNUMBER)."
+      - name: produto_flag
+        description: "Indicador se o produto é fabricado (MAKEFLAG)."
+      - name: produto_flag_acabado
+        description: "Indicador se o produto é um bem acabado (FINISHEDGOODSFLAG)."
+      - name: produto_cor
+        description: "Cor do produto (COLOR)."
+      - name: produto_nivel_seguranca_repo
+        description: "Nível de segurança de estoque do produto (SAFETYSTOCKLEVEL)."
+      - name: produto_nivel_recompra
+        description: "Nível de recompra do produto (REORDERPOINT)."
+      - name: produto_tamanho
+        description: "Tamanho do produto (SIZE)."
+      - name: produto_unidade_medida_tamanho
+        description: "Unidade de medida do tamanho do produto (SIZEUNITMEASURECODE)."
+      - name: produto_unidade_medida_peso
+        description: "Unidade de medida do peso do produto (WEIGHTUNITMEASURECODE)."
+      - name: produto_dias_de_producao
+        description: "Dias necessários para fabricar o produto (DAYSTOMANUFACTURE)."
+      - name: produto_nome_linha
+        description: "Nome da linha do produto (PRODUCTLINE)."
+      - name: produto_classe
+        description: "Classe do produto (CLASS)."
+      - name: produto_estilo
+        description: "Estilo do produto (STYLE)."
+      - name: produto_data_att
+        description: "Data da última atualização do produto (MODIFIEDDATE)."

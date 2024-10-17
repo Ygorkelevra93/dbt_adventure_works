@@ -1,0 +1,54 @@
+version: 2
+
+models:
+  - name: stg_erp__vendas_cabecalho
+    description: "Tabela de cabeçalho de vendas extraídas do sistema ERP AdventureWorks, contendo informações sobre as ordens de venda e seus detalhes."
+    columns:
+      - name: pk_ordem_de_venda_ID
+        description: "Chave primária da ordem de venda (SALESORDERID)."
+      - name: fk_id_cliente
+        description: "Chave estrangeira referenciando o cliente (CUSTOMERID)."
+      - name: fk_id_vendedor
+        description: "Chave estrangeira referenciando o vendedor (SALESPERSONID)."
+      - name: fk_id_territorio
+        description: "Chave estrangeira referenciando o território (TERRITORYID)."
+      - name: fk_id_requisicao_material
+        description: "Chave estrangeira referenciando a requisição de material (BILLTOADDRESSID)."
+      - name: fk_id_endereco_entrega
+        description: "Chave estrangeira referenciando o endereço de entrega (SHIPTOADDRESSID)."
+      - name: fk_id_tipo_entrega
+        description: "Chave estrangeira referenciando o tipo de entrega (SHIPMETHODID)."
+      - name: fk_id_cartao_cliente
+        description: "Chave estrangeira referenciando o cartão de crédito do cliente (CREDITCARDID)."
+      - name: fk_id_cotacao_moeda
+        description: "Chave estrangeira referenciando a cotação de moeda (CURRENCYRATEID)."
+      - name: ordem_de_venda_data_venda
+        description: "Data da venda (ORDERDATE)."
+      - name: ordem_de_venda_data_prazo_entrega
+        description: "Data do prazo de entrega (DUEDATE)."
+      - name: ordem_de_venda_data_embarque
+        description: "Data do embarque (SHIPDATE)."
+      - name: ordem_de_venda_data_att
+        description: "Data da última atualização da ordem de venda (MODIFIEDDATE)."
+      - name: ordem_de_venda_valor_bruto
+        description: "Valor bruto da ordem de venda (SUBTOTAL)."
+      - name: ordem_de_venda_valor_impostos
+        description: "Valor dos impostos da ordem de venda (TAXAMT)."
+      - name: ordem_de_venda_valor_frete
+        description: "Valor do frete da ordem de venda (FREIGHT)."
+      - name: ordem_de_venda_valor_total
+        description: "Valor total devido da ordem de venda (TOTALDUE)."
+      - name: ordem_de_venda_numero_revisao
+        description: "Número de revisão da ordem de venda (REVISIONNUMBER)."
+      - name: ordem_de_venda_status
+        description: "Status da ordem de venda (STATUS)."
+      - name: ordem_de_venda_tipo_venda
+        description: "Tipo de venda, indicando se é venda loja ou venda online."
+      - name: ordem_de_venda_ref_ordem_compra
+        description: "Referência da ordem de compra (PURCHASEORDERNUMBER)."
+      - name: ordem_de_venda_numero_conta
+        description: "Número da conta (ACCOUNTNUMBER)."
+      - name: ordem_de_venda_cod_aprov_cartao
+        description: "Código de aprovação do cartão de crédito (CREDITCARDAPPROVALCODE)."
+      - name: ordem_de_venda_observacoes
+        description: "Observações da ordem de venda (COMMENT)."

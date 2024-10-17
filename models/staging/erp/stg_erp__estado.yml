@@ -1,0 +1,20 @@
+version: 2
+
+models:
+  - name: stg_erp__estado
+    description: "Tabela de estados extraída do sistema ERP AdventureWorks."
+    columns:
+      - name: pk_estado_id
+        description: "Chave primária do estado (STATEPROVINCEID)."
+      - name: fk_id_territorio
+        description: "Chave estrangeira que referencia o território associado ao estado (TERRITORYID)."
+      - name: estado_cod_estado
+        description: "Código do estado (STATEPROVINCECODE)."
+      - name: estado_cod_pais
+        description: "Código do país ao qual o estado pertence (COUNTRYREGIONCODE)."
+      - name: estado_eh_pais
+        description: "Indicador se o estado é o único estado/província do país (ISONLYSTATEPROVINCEFLAG)."
+      - name: estado_nome
+        description: "Nome do estado (NAME)."
+      - name: estado_data_att
+        description: "Data da última atualização do estado (MODIFIEDDATE)."
