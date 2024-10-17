@@ -1,0 +1,18 @@
+version: 2
+
+models:
+  - name: stg_erp__person
+    description: "Tabela de pessoas extraída do sistema ERP AdventureWorks, incluindo informações sobre contatos e tipos de pessoas."
+    columns:
+      - name: pk_id_person_entidade_negocio
+        description: "Chave primária da entidade de negócio (BUSINESSENTITYID)."
+      - name: person_tipo_cod
+        description: "Código do tipo de pessoa (PERSONTYPE)."
+      - name: person_tipo_nome
+        description: "Nome do tipo de pessoa, baseado no código de tipo (PERSONTYPE)."
+      - name: person_name
+        description: "Nome completo da pessoa, concatenando FIRSTNAME, MIDDLENAME e LASTNAME."
+      - name: person_tipo_email_promocional
+        description: "Indicador se a pessoa optou por receber e-mails promocionais (EMAILPROMOTION)."
+      - name: person_data_att
+        description: "Data da última atualização das informações da pessoa (MODIFIEDDATE)."

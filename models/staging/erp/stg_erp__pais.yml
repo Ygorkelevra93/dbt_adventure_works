@@ -1,0 +1,12 @@
+version: 2
+
+models:
+  - name: stg_erp__pais
+    description: "Tabela de países extraída do sistema ERP AdventureWorks."
+    columns:
+      - name: pais_cod_pais
+        description: "Código do país (COUNTRYREGIONCODE)."
+      - name: pais_nome
+        description: "Nome do país (NAME)."
+      - name: pais_data_att
+        description: "Data da última atualização do país (MODIFIEDDATE)."

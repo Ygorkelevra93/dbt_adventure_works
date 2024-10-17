@@ -1,0 +1,12 @@
+version: 2
+
+models:
+  - name: stg_erp__relacao_venda_motivovenda
+    description: "Tabela de relação entre ordens de venda e motivos de venda extraídas do sistema ERP AdventureWorks."
+    columns:
+      - name: pk_id_ordem_de_venda
+        description: "Chave primária da ordem de venda (SALESORDERID)."
+      - name: fk_id_temp_motivo_venda
+        description: "Chave estrangeira que referencia o motivo da venda (SALESREASONID)."
+      - name: temp_motivo_venda_data_att
+        description: "Data da última atualização da relação de motivo de venda (MODIFIEDDATE)."
