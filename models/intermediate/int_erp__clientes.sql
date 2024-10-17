@@ -19,7 +19,7 @@ with
             ,PK_ID_PERSON_ENTIDADE_NEGOCIO
             ,PERSON_TIPO_COD
             ,PERSON_TIPO_NOME
-            ,PERSON_NAME            
+            ,coalesce(PERSON_NAME, store.store_name) as person_name
             ,PERSON_TIPO_EMAIL_PROMOCIONAL
             ,PERSON_DATA_ATT
         from clientes
@@ -28,5 +28,5 @@ with
    )
 
 select * from rename_join
--- where pk_id_customer = '20562' --testes para buscar o cliente com nome vazio
+ --where pk_id_customer = '43661' --testes para buscar o cliente com nome vazio
 -- where PK_ID_PERSON_ENTIDADE_NEGOCIO =  '1704'
