@@ -11,6 +11,7 @@ with
             ,cast(TERRITORYID as int) as fk_id_territory
             --,cast(ROWGUID as varchar) as ROWGUID
             ,cast(MODIFIEDDATE as date) as customer_data_att
+            ,*
         from customer
 )
 

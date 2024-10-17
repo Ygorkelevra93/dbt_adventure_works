@@ -38,3 +38,4 @@ with
     )
 
 select * from rename
+--where pk_ordem_de_venda_ID = '43659'
