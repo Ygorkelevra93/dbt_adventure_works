@@ -1,0 +1,14 @@
+version: 2
+
+models:
+  - name: int_erp__dates
+    description: "Tabela intermediária de datas com nomes de dias da semana e meses renomeados em português."
+    columns:
+      - name: day_of_week
+        description: "Dia da semana (1 para Domingo, 2 para Segunda-feira, etc.)."
+      - name: day_of_week_name_pt
+        description: "Nome do dia da semana em português."
+      - name: month_of_year
+        description: "Mês do ano (1 para Janeiro, 2 para Fevereiro, etc.)."
+      - name: month_of_year_pt
+        description: "Nome do mês em português."

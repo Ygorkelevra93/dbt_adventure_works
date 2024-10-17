@@ -1,0 +1,12 @@
+version: 2
+
+models:
+  - name: int_erp__motivo_venda
+    description: "Tabela de motivos de venda, associando ordens de venda com seus respectivos motivos e tipos."
+    columns:
+      - name: PK_ID_ORDEM_DE_VENDA
+        description: "Chave primária da ordem de venda."
+      - name: MOTIVO_VENDA_NOME
+        description: "Nome do motivo da venda. Se não houver, será 'Vazio'."
+      - name: MOTIVO_VENDA_TIPO
+        description: "Tipo do motivo da venda. Se não houver, será 'Vazio'."

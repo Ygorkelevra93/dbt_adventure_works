@@ -1,0 +1,20 @@
+version: 2
+
+models:
+  - name: int_erp__tipo_cartao
+    description: "Tabela que contém informações sobre os cartões de crédito dos clientes."
+    columns:
+      - name: PK_ID_CARTAO_CLIENTE
+        description: "Chave primária do cartão do cliente."
+      - name: CARTAO_CLIENTE_TIPO_CARTAO
+        description: "Tipo do cartão do cliente."
+      - name: CARTAO_CLIENTE_NUMERO
+        description: "Número do cartão do cliente."
+      - name: CARTAO_CLIENTE_MES_EXPIRA
+        description: "Mês de expiração do cartão."
+      - name: CARTAO_CLIENTE_ANO_EXPIRA
+        description: "Ano de expiração do cartão."
+      - name: CARTAO_CLIENTE_DATA_EXPIRA
+        description: "Data de expiração do cartão, formatada como mês/ano."
+      - name: CARTAO_CLIENTE_DATA_ATT
+        description: "Data de atualização do registro do cartão."

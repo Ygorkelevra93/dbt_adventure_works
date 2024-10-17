@@ -1,0 +1,16 @@
+version: 2
+
+models:
+  - name: int_erp__regiao
+    description: "Tabela de regiões, contendo informações sobre cidades, estados e países."
+    columns:
+      - name: pk_id_endereco
+        description: "Chave primária do endereço."
+      - name: cidade
+        description: "Nome da cidade."
+      - name: estado
+        description: "Nome do estado."
+      - name: pais
+        description: "Nome do país."
+      - name: pais_cod_pais
+        description: "Código do país."

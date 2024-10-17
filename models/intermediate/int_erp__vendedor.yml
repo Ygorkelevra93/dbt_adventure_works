@@ -1,0 +1,26 @@
+version: 2
+
+models:
+  - name: int_erp__vendedor
+    description: "Tabela que contém informações sobre os vendedores e suas metas de vendas."
+    columns:
+      - name: pk_id_salesperson
+        description: "Chave primária do vendedor."
+      - name: FK_ID_TERRITORIO
+        description: "Identificador do território ao qual o vendedor está associado."
+      - name: salesperson_nome
+        description: "Nome do vendedor."
+      - name: salesperson_tipo_cliente_cod
+        description: "Código do tipo de cliente associado ao vendedor."
+      - name: salesperson_tipo_cliente
+        description: "Nome do tipo de cliente associado ao vendedor."
+      - name: SALESPERSON_META
+        description: "Meta de vendas do vendedor."
+      - name: SALESPERSON_BONUS
+        description: "Bônus do vendedor."
+      - name: SALESPERSON_COMISSAO
+        description: "Comissão do vendedor."
+      - name: SALESPERSON_VENDAS_ACUMULADAS
+        description: "Total de vendas acumuladas pelo vendedor."
+      - name: SALESPERSON_VENDAS_ANO_ANTERIOR
+        description: "Total de vendas do vendedor no ano anterior."

@@ -1,0 +1,78 @@
+version: 2
+
+models:
+  - name: int_erp__fct_vendas
+    description: "Fato de vendas, unindo detalhes e cabeçalho das vendas com informações de custo e status."
+    columns:
+      - name: pk_id_ordem_de_venda
+        description: "Chave primária da ordem de venda."
+      - name: fk_id_cliente
+        description: "Chave estrangeira referenciando o cliente."
+      - name: fk_id_vendedor
+        description: "Chave estrangeira referenciando o vendedor."
+      - name: fk_id_territorio
+        description: "Chave estrangeira referenciando o território."
+      - name: fk_id_requisicao_material
+        description: "Chave estrangeira referenciando a requisição de material."
+      - name: fk_id_endereco_entrega
+        description: "Chave estrangeira referenciando o endereço de entrega."
+      - name: fk_id_tipo_entrega
+        description: "Chave estrangeira referenciando o tipo de entrega."
+      - name: fk_id_cartao_cliente
+        description: "Chave estrangeira referenciando o cartão do cliente."
+      - name: fk_id_cotacao_moeda
+        description: "Chave estrangeira referenciando a cotação de moeda."
+      - name: fk_id_produto
+        description: "Chave estrangeira referenciando o produto."
+      - name: fk_id_condicao_especial_venda
+        description: "Chave estrangeira referenciando a condição especial da venda."
+      - name: fct_vendas_data_venda
+        description: "Data da venda."
+      - name: fct_vendas_prazo_entrega
+        description: "Prazo de entrega da venda."
+      - name: fct_vendas_data_embarque
+        description: "Data de embarque da venda."
+      - name: fct_vendas_data_att
+        description: "Data da última atualização da venda."
+      - name: fct_vendas_valor_bruto_impresso_nota
+        description: "Valor bruto impresso na nota."
+      - name: fct_vendas_valor_impostos_nota
+        description: "Valor dos impostos na nota."
+      - name: fct_vendas_valor_frete_nota
+        description: "Valor do frete na nota."
+      - name: fct_vendas_valor_total_impresso_nota
+        description: "Valor total impresso na nota."
+      - name: fct_vendas_quantidade_produto
+        description: "Quantidade do produto na venda."
+      - name: fct_vendas_preco_unitario_venda
+        description: "Preço unitário de venda do produto."
+      - name: fct_vendas_percentual_desconto_aplicado
+        description: "Percentual de desconto aplicado no produto."
+      - name: fct_vendas_valor_total_negociado
+        description: "Valor total negociado na venda."
+      - name: fct_vendas_valor_liquido_negociado
+        description: "Valor líquido negociado na venda."
+      - name: fct_vendas_custo_total_produto
+        description: "Custo total do produto."
+      - name: fct_vendas_preco_unitario_custo
+        description: "Preço unitário de custo do produto."
+      - name: fct_vendas_margem_liquida
+        description: "Margem líquida da venda."
+      - name: fct_vendas_margem_bruta
+        description: "Margem bruta da venda."
+      - name: fct_vendas_numero_revisao
+        description: "Número da revisão da venda."
+      - name: fct_vendas_status_venda
+        description: "Status da venda."
+      - name: fct_vendas_status_venda_nome
+        description: "Nome do status da venda."
+      - name: fct_vendas_tipo_venda
+        description: "Tipo da venda."
+      - name: fct_vendas_ordem_compra
+        description: "Número da ordem de compra."
+      - name: fct_vendas_numero_conta
+        description: "Número da conta da venda."
+      - name: fct_vendas_cod_aprov_cartao
+        description: "Código de aprovação do cartão."
+      - name: fct_vendas_observacoes
+        description: "Observações sobre a venda."
