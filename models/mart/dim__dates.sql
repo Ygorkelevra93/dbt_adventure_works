@@ -35,6 +35,7 @@ with
             ,YEAR_END_DATE as "Último dia do Ano"
             ,DAY_OF_WEEK_NAME_PT as "Dia da Semana"
             ,MONTH_OF_YEAR_PT as "Mês Nome"
+            ,Periodo_consolidado as "Período Consolidado"
         from {{ref("int_erp__dates")}}
 )
 

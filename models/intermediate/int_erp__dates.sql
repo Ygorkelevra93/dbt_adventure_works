@@ -31,6 +31,7 @@ with
                 when raw_generated_data.month_of_year = 11 then 'Novembro'
                 when raw_generated_data.month_of_year = 12 then 'Dezembro'
             end as month_of_year_pt
+            ,YEAR_NUMBER||'_'||MONTH_OF_YEAR as Periodo_consolidado
         from raw_generated_data
     )
 

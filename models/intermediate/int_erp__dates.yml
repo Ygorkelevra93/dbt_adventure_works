@@ -12,3 +12,5 @@ models:
         description: "Mês do ano (1 para Janeiro, 2 para Fevereiro, etc.)."
       - name: month_of_year_pt
         description: "Nome do mês em português."
+      - name:  Periodo_consolidado
+        description: "Concatenado de ano e mês para conseguir usar como dimensão nos gráficos de períodos"

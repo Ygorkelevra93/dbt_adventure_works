@@ -72,3 +72,5 @@ models:
         description: "Nome do dia da semana em português."
       - name: Mês Nome
         description: "Nome do mês em português."
+      - name:  "Período Consolidado"
+        description: "Concatenado de ano e mês para conseguir usar como dimensão nos gráficos de períodos"
