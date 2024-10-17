@@ -6,7 +6,7 @@ with
 
     ,person as (
         select*
-        from {{ref("stg_erp__person")}} where PK_ID_PERSON_ENTIDADE_NEGOCIO = '1704'
+        from {{ref("stg_erp__person")}} --where PK_ID_PERSON_ENTIDADE_NEGOCIO = '1704'
     )
     ,store as (
         select *
@@ -28,5 +28,5 @@ with
    )
 
 select * from rename_join
-where pk_id_customer = '20562'
---where PK_ID_PERSON_ENTIDADE_NEGOCIO = 
+-- where pk_id_customer = '20562' --testes para buscar o cliente com nome vazio
+-- where PK_ID_PERSON_ENTIDADE_NEGOCIO =  '1704'
