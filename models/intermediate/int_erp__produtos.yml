@@ -1,0 +1,22 @@
+version: 2
+
+models:
+  - name: int_erp__produtos
+    description: "Tabela de produtos, contendo informações sobre produtos, suas categorias e subcategorias."
+    columns:
+      - name: pk_id_produto
+        description: "Chave primária do produto."
+      - name: produto_nome
+        description: "Nome do produto."
+      - name: produto_subcategoria
+        description: "Nome da subcategoria à qual o produto pertence."
+      - name: produto_categoria
+        description: "Nome da categoria à qual a subcategoria do produto pertence."
+      - name: produto_data_phase_in
+        description: "Data de introdução do produto no mercado."
+      - name: produto_data_phase_out
+        description: "Data de descontinuação do produto."
+      - name: produto_preco_unitario_custo
+        description: "Preço de custo unitário do produto."
+      - name: produto_preco_lista
+        description: "Preço de venda sugerido do produto."

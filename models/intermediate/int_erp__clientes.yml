@@ -1,0 +1,20 @@
+version: 2
+
+models:
+  - name: int_erp__clientes
+    description: "Tabela intermediária de clientes com informações adicionais da tabela de pessoas."
+    columns:
+      - name: pk_id_customer
+        description: "Chave primária do cliente."
+      - name: pk_id_person_entidade_negocio
+        description: "Chave primária da entidade de negócio da pessoa associada ao cliente."
+      - name: person_tipo_cod
+        description: "Código do tipo de pessoa (ex.: SC, IN, SP, etc.)."
+      - name: person_tipo_nome
+        description: "Nome do tipo de pessoa (ex.: Store Contact, Individual customer, etc.)."
+      - name: person_name
+        description: "Nome completo da pessoa associada ao cliente."
+      - name: person_tipo_email_promocional
+        description: "Indica se a pessoa optou por receber e-mails promocionais (0 ou 1)."
+      - name: person_data_att
+        description: "Data da última atualização das informações da pessoa."
