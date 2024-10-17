@@ -36,6 +36,7 @@ with
             ,DAY_OF_WEEK_NAME_PT as "Dia da Semana"
             ,MONTH_OF_YEAR_PT as "Mês Nome"
             ,Periodo_consolidado as "Período Consolidado"
+            ,Periodo_tri_consolidado as "Período Tri Consolidado"
         from {{ref("int_erp__dates")}}
 )
 

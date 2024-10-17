@@ -14,3 +14,5 @@ models:
         description: "Nome do mês em português."
       - name:  Periodo_consolidado
         description: "Concatenado de ano e mês para conseguir usar como dimensão nos gráficos de períodos"
+      - name:  "Período_tri_consolidado"
+        description: "Concatenado de ano e trimestre para conseguir usar como dimensão nos gráficos de períodos"             
