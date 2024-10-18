@@ -1,6 +1,3 @@
-/* {{ config(severity = 'warn') }} */ 
-/* Criado uma configuração de aviso para ser usada sem travar o pipeline*/
-
 WITH vendas_2011 AS (
     SELECT 
       cast(SUM(fct_vendas_valor_total_negociado) as number (18,2)) AS total
