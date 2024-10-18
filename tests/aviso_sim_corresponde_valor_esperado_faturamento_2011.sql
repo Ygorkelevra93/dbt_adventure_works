@@ -1,4 +1,7 @@
-
+{{ config(
+    description="Teste singular que verifica se o valor total negociado de vendas em 2011 corresponde ao valor esperado de 12.646.112,16. Foi configurado como aviso (warn) para não interromper o pipeline caso a condição não seja atendida.",
+    severity='warn'
+) }}
 
 /* {{ config(severity = 'warn') }} */ 
 /* Criado uma configuração de aviso para ser usada sem travar o pipeline*/
