@@ -1,6 +1,5 @@
 version: 2
-
-tests:
+data_tests:
   - name: aviso_sim_corresponde_valor_esperado_faturamento_2011
     description: >
       Teste singular que verifica se o valor total negociado de vendas em 2011 corresponde ao valor esperado de 12.646.112,16. 
