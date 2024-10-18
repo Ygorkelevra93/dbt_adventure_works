@@ -1,0 +1,13 @@
+version: 2
+
+models:
+  - name: stg_erp__loja
+    description: "Tabela staging da loja extraída do ERP (AdventureWorks). Contém informações sobre as lojas, incluindo o identificador único da loja e o nome da loja."
+    columns:
+      - name: pk_id_store
+        description: "Chave primária da loja, identificador único extraído do campo BUSINESSENTITYID da tabela original STORE."
+
+      - name: store_name
+        description: "Nome da loja, extraído do campo NAME da tabela original STORE."
+
+
