@@ -18,10 +18,10 @@ with
             ,cast (SHIPDATE as date) as ordem_de_venda_data_embarque 
             ,cast (MODIFIEDDATE as date) as ordem_de_venda_data_att
             -- valores, metricas
-            ,cast (SUBTOTAL as number(18,2)) as ordem_de_venda_valor_bruto 
-            ,cast (TAXAMT as number(18,2)) as ordem_de_venda_valor_impostos 
-            ,cast (FREIGHT as number(18,2)) as ordem_de_venda_valor_frete 
-            ,cast (TOTALDUE as number(18,2)) as ordem_de_venda_valor_total 
+            ,cast (SUBTOTAL as float) as ordem_de_venda_valor_bruto 
+            ,cast (TAXAMT as float) as ordem_de_venda_valor_impostos 
+            ,cast (FREIGHT as float) as ordem_de_venda_valor_frete 
+            ,cast (TOTALDUE as float as ordem_de_venda_valor_total 
             -- dados informacionais
             ,cast (REVISIONNUMBER as varchar) as ordem_de_venda_numero_revisao 
             ,cast (STATUS as varchar) as ordem_de_venda_status 
