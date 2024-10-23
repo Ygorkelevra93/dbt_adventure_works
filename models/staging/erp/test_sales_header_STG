@@ -1,10 +1,11 @@
+/*TESTE CRIADO PARA CONFERIR SE O VALOR SOFREU ALTERAÇÕES DA CAMADA RAW PARA STAGE - CAUSADO POR ARREDONDAMENTO */
 select 
-    year(ORDEM_DE_VENDA_DATA_ATT) as ano
+    year(ordem_de_venda_data_venda) as ano
     ,sum(ORDEM_DE_VENDA_VALOR_BRUTO) as total_bruto
     ,sum(ORDEM_DE_VENDA_VALOR_IMPOSTOS) as total_impostos
     ,sum(ORDEM_DE_VENDA_VALOR_FRETE) as total_frete
     ,sum(ORDEM_DE_VENDA_VALOR_TOTAL) as total_final
  
 from {{ref("stg_erp__vendas_cabecalho")}}
-group by year(ORDEM_DE_VENDA_DATA_ATT)
-order by year(ORDEM_DE_VENDA_DATA_ATT) asc
+group by year(ordem_de_venda_data_venda)
+order by year(ordem_de_venda_data_venda) asc
