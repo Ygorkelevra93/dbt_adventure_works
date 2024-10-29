@@ -49,17 +49,17 @@ models:
       - name: fct_vendas_percentual_desconto_aplicado
         description: "Percentual de desconto aplicado no produto."
       - name: fct_vendas_valor_total_negociado
-        description: "Valor total negociado na venda."
+        description: "Valor total negociado na venda. Métrica criada para totalizar o valor bruto de cada venda (quantidade * preço unitário)"
       - name: fct_vendas_valor_liquido_negociado
-        description: "Valor líquido negociado na venda."
+        description: "Valor líquido negociado na venda. Métrica criada para totalizar o valor líquido de cada venda (quantidade * (preço unitário * (1 - Percentual Desconto Aplicado)))"
       - name: fct_vendas_custo_total_produto
-        description: "Custo total do produto."
+        description: "Custo total do produto. Métrica criada para totalizar o valor do custo de cada venda (quantidade * preço unitário custo)"
       - name: fct_vendas_preco_unitario_custo
-        description: "Preço unitário de custo do produto."
+        description: "Preço unitário de custo do produto. Coluna trazida da tabela de produtos"
       - name: fct_vendas_margem_liquida
-        description: "Margem líquida da venda."
+        description: "Margem líquida da venda. Métrica criada para totalizar o valor da margem de cada venda (fct_vendas_valor_liquido_negociado - fct_vendas_custo_total_produto)"
       - name: fct_vendas_margem_bruta
-        description: "Margem bruta da venda."
+        description: "Margem bruta da venda. Métrica criada para totalizar o valor da margem de cada venda (fct_vendas_valor_total_negociado - fct_vendas_custo_total_produto)"
       - name: fct_vendas_numero_revisao
         description: "Número da revisão da venda."
       - name: fct_vendas_status_venda

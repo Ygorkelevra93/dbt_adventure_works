@@ -71,22 +71,22 @@ models:
         description: 'Percentual de desconto aplicado ao preço de venda.'
 
       - name: Valor Total Negociado
-        description: 'Valor total negociado, incluindo descontos e outros ajustes.'
+        description: 'Valor total negociado, incluindo descontos e outros ajustes. Métrica para totalizar o valor bruto de cada venda (Quantidade Comprada * Preço Venda Unitário)'
 
       - name: Valor Total Negociado Líquido
-        description: 'Valor total negociado, líquido após descontos e ajustes.'
+        description: 'Valor total negociado, líquido após descontos e ajustes. Métrica para totalizar o valor bruto de cada venda (Quantidade Comprada * (Preço Venda Unitário * (1 - Percentual Desconto Aplicado)) )'
 
       - name: Valor Custo Produtos
-        description: 'Custo total dos produtos vendidos.'
+        description: 'Custo total dos produtos vendidos. Métrica criada para totalizar o valor do custo de cada venda (quantidade * preço unitário custo)'
 
       - name: Valor Custo Produto Unitário
         description: 'Custo unitário do produto vendido.'
 
       - name: Margem Líquida
-        description: 'Margem líquida obtida na venda, após todos os custos.'
+        description: 'Margem líquida obtida na venda, após todos os custos. Métrica criada para totalizar o valor da margem de cada venda (Valor Total Negociado Líquido - Valor Custo Produtos)'
 
       - name: Margem Bruta
-        description: 'Margem bruta obtida na venda, antes de considerar os custos.'
+        description: 'Margem bruta obtida na venda, antes de considerar os custos. Métrica criada para totalizar o valor da margem de cada venda (Valor Total Negociado - Valor Custo Produtos)'
 
       - name: Status Venda
         description: 'Status da venda, indicando se foi concluída, cancelada, etc.'
